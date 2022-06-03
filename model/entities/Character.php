@@ -4,6 +4,7 @@ class Character {
     private $name;
     protected $hp;
     protected $atk;
+    protected $image;
     public $id;
 
 

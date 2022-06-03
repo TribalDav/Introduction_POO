@@ -23,4 +23,6 @@ class CharacterManager
         $result = $prepare->fetch();
         return $result;
     }
+
+    
 }
