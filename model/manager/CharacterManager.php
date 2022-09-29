@@ -8,7 +8,7 @@ class CharacterManager
     {
         $db = dbconnect();
         $query = $db->query('SELECT * FROM CHARACTERS');
-        $results = $query->fetchAll(PDO::FETCH_CLASS, 'Character');
+        $results = $query->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Character');
         return $results;
     }
 

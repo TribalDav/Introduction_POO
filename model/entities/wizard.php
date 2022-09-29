@@ -7,12 +7,10 @@ class Wizard extends Character
     public function getMana()
     {
         return $this->mana;
-
     }
 
-    public function setMana($newMana)
+    public function setMana($mana)
     {
-        $this->mana = $newMana;
-
+        $this->mana = $mana;
     }
 }

@@ -11,3 +11,12 @@
 
 </head>
 <body>
+
+<?php if(isset($_GET['status'])&&!empty($_GET['status'])){
+        $status = $_GET['status'];
+        $message = $_GET['message'];?>
+        <div class="alert alert-<?php echo $status ?> alert-dismissible fade show" role="alert">
+            <strong><?php echo $message ?></strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <?php } ?>

@@ -9,7 +9,7 @@ class Character {
 
 //Pour faciliter la création des objets, on peut définir un constructeur
 
-    /*public function __construct($name, $hp, $atk)//on déclare les paramètres qui devront être fourni à l'instanciation
+   /*public function __construct($name, $hp, $atk)//on déclare les paramètres qui devront être fourni à l'instanciation
     {
         $this->name = $name;
         $this->hp = $hp;

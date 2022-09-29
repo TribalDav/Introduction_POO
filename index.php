@@ -1,9 +1,5 @@
 <?php
 
-
-
-
-
 require 'model/entities/Character.php';
 require 'model/entities/Wizard.php';
 require 'model/manager/CharacterManager.php';
