@@ -12,27 +12,27 @@ class UserManager
         return $result;
     }
 
-    public static function register($name, $pseudo, $email, $password)
+    public static function register($name, $pseudo, $mail, $password)
     {
         $db = dbconnect();
-        $query = $db->prepare("INSERT INTO USERS (name, pseudo, email, password) VALUES (:name, :pseudo, :email, :password)");
+        $query = $db->prepare("INSERT INTO USERS (name, pseudo, mail, password) VALUES (:name, :pseudo, :mail, :password)");
         $query->execute([
             'name' => $name,
             'pseudo' => $pseudo,
-            'email' => $email,
+            'mail' => $mail,
             'password' => $password
             ]);
     }
 
     // ajout d'entités par utilisateur connecté
-    public static function addCharacterByUser($name, $hp, $atk, $image, $userId)
+    public static function addCharacterByUser($name, $hp, $atk, $picture, $userId)
     {
         $db = dbconnect();
-        $query = $db->prepare('UPDATE CHARACTERS SET name = :name, hp = :hp, atk = :atk, image = :image WHERE user_id = :user_id');
+        $query = $db->prepare('UPDATE CHARACTERS SET name = :name, hp = :hp, atk = :atk, picture = :picture WHERE user_id = :user_id');
         $query->bindParam(':name', $name);
         $query->bindParam(':hp', $hp);
         $query->bindParam(':atk', $atk);
-        $query->bindParam(':image', $image);
+        $query->bindParam(':picture', $picture);
         $query->bindParam(':user_id', $userId);
         $query->execute();
 

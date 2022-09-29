@@ -4,7 +4,7 @@ class User
 {
     private $name;
     private $pseudo;
-    private $email;
+    private $mail;
     private $password;
     public $id;
     
@@ -19,7 +19,18 @@ class User
         {
             return $this->pseudo;
         }
-
+        public function getName()
+        {
+            return $this->name;
+        }
+        public function getMail()
+        {
+            return $this->mail;
+        }
+        public function getPassword()
+        {
+            return $this->password;
+        }
         public function setPseudo($newPseudo)
         {
             $this->pseudo = $newPseudo;

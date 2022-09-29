@@ -4,7 +4,7 @@ class Character {
     private $name;
     protected $hp;
     protected $atk;
-    protected $image;
+    protected $picture;
     public $id;
 
 
@@ -26,6 +26,18 @@ class Character {
     {
         //le getter est là pour récupérer la donnée privée
         return $this->name;
+    }
+    public function getPicture()
+    {
+        return $this->picture;
+    }
+    public function getHp()
+    {
+        return $this->hp;
+    }
+    public function getAtk()
+    {
+        return $this->atk;
     }
     public function setName($newName)
     {

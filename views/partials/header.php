@@ -17,18 +17,18 @@
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-            <img class="bi me-2" width="40" height="32" role="img" aria-label="FF13"><use xlink:href="C:\xampp\htdocs\Introduction_POO\imgs FFXIII\pinpng.png"></use></i>
+            <img class="bi me-2" width="80" height="64" role="img" aria-label="FF13" src="imgs FFXIII\pinpng.png"></img>
           </a>
 
           <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
             <li>
-              <a href="index.php" class="nav-link text-secondary">
+              <a href="index.php" class="nav-link text-white">
                 <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
                 Accueil
               </a>
             </li>
             <li>
-              <a href="single.php" class="nav-link text-white">
+              <a href="userAddContent.php" class="nav-link text-white">
                 <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"></use></svg>
                 Personnages
               </a>
@@ -48,7 +48,7 @@
             <li>
               <a href="#" class="nav-link text-white">
                 <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
-                FForum
+                Forum
               </a>
             </li>
           </ul>
