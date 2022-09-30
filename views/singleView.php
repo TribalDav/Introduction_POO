@@ -1,9 +1,10 @@
 <?php 
 require 'partials/header.php';
 ?>
+<div class="container p-5 my-5">
+<div class="row g-2 shadow p-3 mb-5 bg-body rounded">
 
-<div class="row">
-<div class="card mb-3" style="max-width: 540px;">
+<div class="card mb-3" style="max-width: auto;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="<?php echo $character->getPicture() ?>" class="img-fluid rounded-start" alt="personnage du jeu Final Fantasy 13">
@@ -18,6 +19,7 @@ require 'partials/header.php';
     </div>
   </div>
   </div>
+</div>
 </div>
 
 <?php
