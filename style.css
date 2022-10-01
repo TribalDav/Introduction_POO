@@ -1,5 +1,10 @@
-h1 {
-  color: red;
+header{
+  background-color: rgb(63, 63, 63);
+  color: rgb(150, 109, 109);
 }
+body{
+  background-color: rgb(172, 172, 172);
+}
+
 
 /*# sourceMappingURL=style.css.map */
