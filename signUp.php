@@ -13,6 +13,6 @@ if(isset($_POST) && !empty($_POST)){
     UserManager::register($name, $pseudo, $email, $hashed_password);
  }
 
-
+ 
 
 require 'views/signUpView.php';

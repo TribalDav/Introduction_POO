@@ -4,7 +4,8 @@ require 'model\dbconnect.php';
 
 class CharacterManager
 {
-    public static function getAllCharacters()
+    public static function getAllCharacters()   // affichage de tous les personnages
+  
     {
         $db = dbconnect();
         $query = $db->query('SELECT * FROM CHARACTERS');
@@ -12,7 +13,7 @@ class CharacterManager
         return $results;
     }
 
-    public static function getCharacterById($id)
+    public static function getCharacterById($id)    // affichage d'un personnage par son id 
     {
         $db = dbconnect();
         $prepare = $db->prepare('SELECT * FROM CHARACTERS WHERE id = :id');

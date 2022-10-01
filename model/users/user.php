@@ -8,13 +8,14 @@ class User
     private $password;
     public $id;
     
-        /*public function __construct($name, $pseudo, $email, $password) 
+        /*public function __construct($name, $pseudo, $mail, $password) 
         {
             $this->name = $name;
-            $this->pseudo = $pseudo;
-            $this->email = $email;
+            $this->pseudo = $pseudo;                // constructeur pour les tests
+            $this->email = $mail;
             $this->password = $password;
         }*/
+        
         public function getPseudo()
         {
             return $this->pseudo;

@@ -1,6 +1,10 @@
 <?php 
 require 'partials/header.php';
 ?>
+
+<?php         // problème à résoudre concernant l'enregistrement de nouveaux personnages dans la BDD    ?>
+
+
 <h2>Ajout d'un personnage</h2>
 <div class="container">
     <form action="userAddContent.php" method="post" enctype="multipart/form-data">

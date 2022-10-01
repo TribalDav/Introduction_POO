@@ -64,8 +64,9 @@
         <div class="text-end">
             <a href="signIn.php"><button type="button" class="btn btn-light text-dark me-2">Connexion</button></a>
             <a href="signUp.php"><button type="button" class="btn btn-primary">Inscription</button></a>
-          </div>
+        </div>
       </div>
+    
     </div>
   </header>
 

@@ -4,6 +4,7 @@ require 'model\dbconnect.php';
 
 class UserManager
 {
+    // affichage d'un utilisateur par son pseudo
     public static function getUserInfosByPseudo($pseudo)
     {
         $db = dbconnect();
@@ -11,7 +12,7 @@ class UserManager
         $result = $query->fetch(PDO::FETCH_ASSOC);
         return $result;
     }
-
+// enregistrement nouvel utilisateur
     public static function register($name, $pseudo, $mail, $password)
     {
         $db = dbconnect();
