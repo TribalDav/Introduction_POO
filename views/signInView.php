@@ -2,8 +2,9 @@
 require 'partials/header.php';
 ?>
 
-<h2>Identification membre</h2>
+
 <div class="container">
+<h2>Identification membre</h2>
 <form action="" method="post">
     <div>
         <label for="pseudo">Pseudo :</label>
