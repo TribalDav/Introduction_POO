@@ -7,7 +7,7 @@ require 'partials/header.php';
 
 
 <div class="container">
-<h2>Ajout d'un personnage</h2>
+<h2>Ajout ou suppression d'un personnage</h2>
     <form action="userAddContent.php" method="post" enctype="multipart/form-data">
         <div class="form-group">
             <label for="name">Nom du personnage</label>
@@ -23,10 +23,16 @@ require 'partials/header.php';
         </div>
         <div class="form-group">
             <label for="image">Image du personnage</label>
-            <input type="file" class="form-control" id="image" name="image" placeholder="Image du personnage">
+            <input type="file" class="form-control" id="image" name="picture" placeholder="Image du personnage">
         </div>
         <button type="submit" class="btn btn-primary">Ajouter</button>
     </form>
+    <form action="userDeleteContent.php" method="post">
+        <div class="form-group">
+            <label for="name">Nom du personnage à supprimer</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Nom du personnage">
+        </div>
+        <button type="submit" class="btn btn-primary">Supprimer</button>
 </div>
 
 

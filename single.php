@@ -1,6 +1,6 @@
 <?php
 require 'model/entities/Character.php';
-require 'model/entities/Wizard.php';
+//require 'model/entities/Wizard.php';
 require 'model/manager/CharacterManager.php';
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
