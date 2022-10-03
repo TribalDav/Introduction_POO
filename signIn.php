@@ -13,9 +13,8 @@ if(isset($_POST) && !empty($_POST)){
     $isConfirmed = password_verify($entering_password, $hashed_password);
     if($isConfirmed){
         session_start();
-        $_SESSION['pseudo'] = $pseudo;
-        $_SESSION['success'] = "Vous êtes connecté";
-        header('location:index.php');
+        $_SESSION['pseudo'] = $userInfos['pseudo'];
+        header('location:index.php?status=success&message=Vous êtes connecté');
         ;
         
     }

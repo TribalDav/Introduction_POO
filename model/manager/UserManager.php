@@ -26,14 +26,13 @@ class UserManager
     }
 
     // ajout d'entités par utilisateur connecté
-    public static function addCharacterByUser($name, $hp, $atk, $picture, $userId)
+    public static function addCharacterByUser($name, $hp, $atk, $userId)
     {
         $db = dbconnect();
-        $query = $db->prepare('UPDATE CHARACTERS SET name = :name, hp = :hp, atk = :atk, picture = :picture WHERE user_id = :user_id');
+        $query = $db->prepare('INSERT INTO CHARACTERS VALUES (null, :name, :hp, :atk, :user_id)');
         $query->bindParam(':name', $name);
         $query->bindParam(':hp', $hp);
         $query->bindParam(':atk', $atk);
-        $query->bindParam(':picture', $picture);
         $query->bindParam(':user_id', $userId);
         $query->execute();
 

@@ -21,10 +21,10 @@ require 'partials/header.php';
             <label for="atk">Points d'attaque</label>
             <input type="number" class="form-control" id="atk" name="atk" placeholder="Points d'attaque">
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label for="image">Image du personnage</label>
             <input type="file" class="form-control" id="image" name="picture" placeholder="Image du personnage">
-        </div>
+        </div> -->
         <button type="submit" class="btn btn-primary">Ajouter</button>
     </form>
     <form action="userDeleteContent.php" method="post">

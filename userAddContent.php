@@ -12,10 +12,9 @@ if(isset($_SESSION['user'])&& !empty($_SESSION['user'])){
         $name = $_POST['name']; 
         $hp = $_POST['hp'];
         $atk = $_POST['atk'];
-        $picture = $_POST['picture'];
-        $userId = $user->id;
-        
-    }else{
+        $userId = $_SESSION['user'];
+        UserManager::addCharacterByUser($name, $hp, $atk, $userId);
+    } else {
         echo "Vous devez être connecté pour ajouter un personnage";
     }
 }
